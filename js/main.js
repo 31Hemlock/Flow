@@ -4,13 +4,13 @@
 // ------------------------------=================------------------------------
 // -----------------------------------------------------------------------------
 
-
+var numOfImages = 27;
 var interval = 0;
-var audioDone = new Audio('Sounds/Done.mp3');
+var audioDone = new Audio('sound/Done.mp3');
 var view = "task";
 var categoryNumber = 0;
 var count = 0;
-var backgroundNumber = Math.floor(Math.random() * 27);
+var backgroundNumber = Math.floor(Math.random() * numOfImages);
 var strBackgroundImage = "url('img/bgd" + backgroundNumber + ".jpg')";
 
 // Modal stuff:
@@ -258,7 +258,7 @@ $('#consoleid').keypress(throttle(function() {
   }
   //If 'roll', set a random background
   if (str.match(pattern3)) {
-    var backgroundNumber = Math.floor(Math.random() * 27);
+    var backgroundNumber = Math.floor(Math.random() * numOfImages);
     var strBackgroundImage = "url('img/bgd" + backgroundNumber + ".jpg')";
     document.body.style.backgroundImage = strBackgroundImage;
     document.getElementById("consoleid").value = "";
