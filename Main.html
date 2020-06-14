@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flow</title>
+  <meta http-equiv="Content-Type"
+  content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" sizes="256x256" href="img/wave2.jpg">
+  <link href="css\style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/HackTimer-master/HackTimer.min.js"></script> <!-- Required to keep JavaScript timers running in the background. -->
+  <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body class="container-fluid">
+  <button id="myBtn">Create new task</button>
+  <h2 class="title" id="flowTitle"> <i>Flow</i></h2>
+  <br>
+  <input type="text" id="consoleid" name="consolename" class="console1" autofocus>
+  <br> <br>
+  <div class="task-pane" id="taskpane">
+  </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="createTask">
+      <label for="taskTitle">Title:</label>
+      <input type="text" id="taskTitle">
+      <br> <br>
+      <label for="prefCompletion">Preferred completion:</label>
+      <input type="text" id="prefCompletion">
+      <br> <br>
+      <label for="deadline">Deadline:</label>
+      <input type="text"id="deadline">
+      <br> <br>
+      <label for="notes">Notes:</label>
+      <input type="text"id="notes">
+      <br> <br>
+      <button id="submit">Create</button>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+</html>
