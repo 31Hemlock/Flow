@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: 'Champagne';
   src: url('fonts/cac_champagne.ttf');
-}
+} */
 
 h1 {
   -webkit-margin-before: 0.67em;
@@ -17,9 +17,6 @@ h4 {
   font-size:18px;
 }
 
-input {
-
-}
 
 img {
   min-width:1080px;
@@ -42,9 +39,7 @@ body  {
 background-attachment: fixed;
 background-size:cover;
 
-
 }
-
 
 .task {
 
